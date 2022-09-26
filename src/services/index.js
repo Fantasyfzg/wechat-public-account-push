@@ -746,6 +746,7 @@ export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
 export const getMyWords = (words) =>{
   var randNum = Math.random() * 5; // 固定我的留言只有5句话
   var index = Math.floor(randNum);
+  console.log(words[index]);
   var resultStr = words[index];
   return resultStr;
 }

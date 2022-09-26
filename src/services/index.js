@@ -683,6 +683,9 @@ export const getAggregatedData = async () => {
     
     // 我们是多少天的微信好友
     const wechatFriendDay = getWeChatFriendDay(user.weChatFriendFirstDay)
+    
+     // 获取我给对方写的留言
+    const mywordsToUser = getMyWords(user.mywords)
 
     // 集成所需信息
     const wxTemplateParams = [
@@ -709,6 +712,7 @@ export const getAggregatedData = async () => {
       { name: toLowerLine('poetryTitle'), value: poetryTitle, color: getColor() },
       { name: toLowerLine('courseSchedule'), value: courseSchedule, color: getColor() },
       { name: toLowerLine('friendDay'), value: wechatFriendDay, color: getColor() },
+      { name: toLowerLine('myWords'), value: mywordsToUser, color: getColor() },
     ].concat(weatherMessage)
       .concat(constellationFortune)
       .concat(dateDiffParams)
@@ -734,6 +738,16 @@ export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
   var diffDays = parseInt((date1-date2) / (1000 * 60 * 60 * 24))
   console.log("认识几天了： " + diffDays)
   return diffDays;
+}
+
+
+/**
+ * 我给对方的留言：数组，随机获取其中一条
+ */
+export const getMyWords = (words) =>{
+  var randNum = Math.random()*words.length;
+  var index = Math.floor(randNum);
+  return words[index];
 }
 
 

@@ -740,17 +740,14 @@ export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
   return diffDays;
 }
 
-
 /**
  * 我给对方的留言：数组，随机获取其中一条
  */
 export const getMyWords = (words) =>{
   var randNum = Math.random() * 5; // 固定我的留言只有5句话
   var index = Math.floor(randNum);
-  console.log(typeof words);
-  console.log(words);
-  console.log(words[index]);
-  return words[Number(index)];
+  var resultStr = words[index];
+  return resultStr;
 }
 
 

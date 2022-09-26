@@ -745,10 +745,12 @@ export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
 /**
  * 我给对方的留言：数组，随机获取其中一条
  */
-export const getMyWords = (words) =>{
-  words.forEach((item) => {
-    item.checkout = item.contents[Math.floor(Math.random() * item.contents.length + 1) - 1]
-  })
+export const getMyWords = (words) => {
+  if (Object.prototype.toString.call(words) === '[object Array]') {
+    words.forEach((item) => {
+      item.checkout = item.contents[Math.floor(Math.random() * item.contents.length + 1) - 1]
+    })
+  }
   return words;
 }
 

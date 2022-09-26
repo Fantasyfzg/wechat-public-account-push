@@ -684,8 +684,9 @@ export const getAggregatedData = async () => {
     // 我们是多少天的微信好友
     const wechatFriendDay = getWeChatFriendDay(user.weChatFriendFirstDay)
     
-     // 获取我给对方写的留言
-    const mywordsToUser = getMyWords(user.mywords)
+      // 获取我给对方写的留言
+    const mywordsToUser = getMyWords(user.mywords).map((item) => ({ name: toLowerLine('myWords'), value: item.checkout, color: getColor() }))
+
 
     // 集成所需信息
     const wxTemplateParams = [
@@ -717,7 +718,8 @@ export const getAggregatedData = async () => {
       .concat(constellationFortune)
       .concat(dateDiffParams)
       .concat(slotParams)
-
+      .concat(mywordsToUser)
+    
     user.wxTemplateParams = wxTemplateParams
   }
 
@@ -744,11 +746,10 @@ export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
  * 我给对方的留言：数组，随机获取其中一条
  */
 export const getMyWords = (words) =>{
-  var randNum = Math.random() * 5; // 固定我的留言只有5句话
-  var index = Math.floor(randNum);
-  console.log(words[index]);
-  var resultStr = words[index];
-  return resultStr;
+  words.forEach((item) => {
+    item.checkout = item.contents[Math.floor(Math.random() * item.contents.length + 1) - 1]
+  })
+  return words;
 }
 
 

@@ -680,6 +680,9 @@ export const getAggregatedData = async () => {
 
     // 获取课表信息
     const courseSchedule = getCourseSchedule(user.courseSchedule || config.courseSchedule) || DEFAULT_OUTPUT.courseSchedule
+    
+    // 我们是多少天的微信好友
+    const wechatFriendDay = getWeChatFriendDay(user.weChatFriendFirstDay)
 
     // 集成所需信息
     const wxTemplateParams = [
@@ -705,6 +708,7 @@ export const getAggregatedData = async () => {
       { name: toLowerLine('poetryDynasty'), value: poetryDynasty, color: getColor() },
       { name: toLowerLine('poetryTitle'), value: poetryTitle, color: getColor() },
       { name: toLowerLine('courseSchedule'), value: courseSchedule, color: getColor() },
+      { name: toLowerLine('friendDay'), value: wechatFriendDay, color: getColor() },
     ].concat(weatherMessage)
       .concat(constellationFortune)
       .concat(dateDiffParams)
@@ -715,6 +719,23 @@ export const getAggregatedData = async () => {
 
   return users
 }
+
+/**
+* 我们是多少天的微信好友
+*/
+export const getWeChatFriendDay = (weChatFriendFirstDay) =>{
+  console.log("哪一天加的好友： " + weChatFriendFirstDay)
+  // 现在时间
+  var date1 = new Date()
+  // 你和好友认识的时间
+  var date2 = new Date(weChatFriendFirstDay)
+
+  // 认识了多少天
+  var diffDays = parseInt((date1-date2) / (1000 * 60 * 60 * 24))
+  console.log("认识几天了： " + diffDays)
+  return diffDays;
+}
+
 
 /**
  * 获取处理好的回执消息

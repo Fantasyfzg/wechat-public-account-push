@@ -103,6 +103,7 @@ export const getConstellation = (date) => {
  * @param city {String}
  */
 export const getWeatherCityInfo = (province, city) => {
+  console.log("城市是" + city)
   const provName = province.replace(/[省市]$/, '')
   const prov = WEATHER_CITY.find((it) => it.city_name === provName && it.pid === 0)
   if (prov) {

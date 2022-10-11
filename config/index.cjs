@@ -71,7 +71,7 @@ const USER_CONFIG = {
       // 所在省份
       province: "云南",
       // 所在城市
-      city: "镇雄",
+      city: "镇雄县",
       // 认识该好友的时间
       weChatFriendFirstDay: "2022-05-20",
       // 新历生日, 仅用作获取星座运势, 格式必须

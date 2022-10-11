@@ -107,15 +107,20 @@ export const getWeatherCityInfo = (province, city) => {
   const provName = province.replace(/[省市]$/, '')
   const prov = WEATHER_CITY.find((it) => it.city_name === provName && it.pid === 0)
   if (prov) {
-    const cName = city.replace(/[市区县]$/, '')
-    for (const name of '|市|区|县'.split('|')) {
-      const c = WEATHER_CITY.find((it) => it.pid === prov.id && it.city_name === `${cName}${name}`)
-      if (c) {
-        return c
-      }
-    }
+//     const cName = city.replace(/[市区县]$/, '')
+//     for (const name of '|市|区|县'.split('|')) {
+//       const c = WEATHER_CITY.find((it) => it.pid === prov.id && it.city_name === `${cName}${name}`)
+//       if (c) {
+//         return c
+//       }
+//     }
     if (prov.city_code) {
-      return prov
+        return prov
+    }else{
+        const c = WEATHER_CITY.find((it) => it.city_name === city)
+        if (c) {
+          return c
+        }
     }
   }
   return null

@@ -77,6 +77,20 @@ const USER_CONFIG = {
       
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
+      
+      // 倒数日
+      customizedDateList: [
+        // 距离元旦
+        {
+          "keyword": "new_year_day",
+          date: "2023-01-01"
+        },
+        // 距离除夕
+        {
+          "keyword": "new_year_eve",
+          date: "2023-01-21"
+        },
+      ],
      
       // 我给对方的留言
       mywords: [{
@@ -105,6 +119,20 @@ const USER_CONFIG = {
       
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
+     
+      // 倒数日
+      customizedDateList: [
+        // 距离元旦
+        {
+          "keyword": "new_year_day",
+          date: "2023-01-01"
+        },
+        // 距离除夕
+        {
+          "keyword": "new_year_eve",
+          date: "2023-01-21"
+        },
+      ],
      
       // 我给对方的留言
       mywords: [{
@@ -141,6 +169,20 @@ const USER_CONFIG = {
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
      
+       // 倒数日
+      customizedDateList: [
+        // 距离元旦
+        {
+          "keyword": "new_year_day",
+          date: "2023-01-01"
+        },
+        // 距离除夕
+        {
+          "keyword": "new_year_eve",
+          date: "2023-01-21"
+        },
+      ],
+      
       // 我给对方的留言
       mywords: [{
         contents: [
@@ -176,6 +218,20 @@ const USER_CONFIG = {
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
      
+      // 倒数日
+      customizedDateList: [
+        // 距离元旦
+        {
+          "keyword": "new_year_day",
+          date: "2023-01-01"
+        },
+        // 距离除夕
+        {
+          "keyword": "new_year_eve",
+          date: "2023-01-21"
+        },
+      ],
+     
       // 我给对方的留言
       mywords: [{
         contents: [
@@ -206,6 +262,20 @@ const USER_CONFIG = {
       
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
+     
+      // 倒数日
+      customizedDateList: [
+        // 距离元旦
+        {
+          "keyword": "new_year_day",
+          date: "2023-01-01"
+        },
+        // 距离除夕
+        {
+          "keyword": "new_year_eve",
+          date: "2023-01-21"
+        },
+      ],
      
       // 我给对方的留言
       mywords: [{

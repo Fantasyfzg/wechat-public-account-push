@@ -67,7 +67,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "ocxn55wpJflejztilgcOPgELXBVc",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "X-qVI9toy2QvgYJIxGKWbocWZjj-aMUEA3eHN4iTpXo",
+      useTemplateId: "0Qew8aynYf7IaVRKSVMDT0aYykWwpz4loaSiEoSHmC0",
       // 所在省份
       province: "云南",
       // 所在城市
@@ -90,6 +90,11 @@ const USER_CONFIG = {
           "keyword": "new_year_eve",
           date: "2023-01-21"
         },
+        // 距离我的生日还有多少天
+        {
+          "keyword": "your_birthday",
+          date: "2022-12-22"
+        },
       ],
      
       // 我给对方的留言
@@ -109,7 +114,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "ocxn552q0Fbkrziw8hUyZUkLbkF8",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "9j89YMQJIJFYkVNjAB_SPh1LN8uhUGvcWZ5b3vafyGo",
+      useTemplateId: "RXc4tTOFBD_tu4OiJSivsOxMBSMR3q1Ei-A01GLvDK0",
       // 所在省份
       province: "云南",
       // 所在城市
@@ -131,6 +136,11 @@ const USER_CONFIG = {
         {
           "keyword": "new_year_eve",
           date: "2023-01-21"
+        },
+        // 距离你的生日还有多少天
+        {
+          "keyword": "your_birthday",
+          date: "2023-07-14"
         },
       ],
      
@@ -158,7 +168,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "ocxn557fVID0sg7ASWVULuJYdcBo",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "_ItSMWWmHaF8bPHIaDmIFc2lKvk5cvCXKZOCZlNmfAU",
+      useTemplateId: "C3wpBxmYKUposRBA4vAyvPUfIyP89Rr5ARQEvdkUHbU",
       // 所在省份
       province: "浙江",
       // 所在城市
@@ -180,6 +190,11 @@ const USER_CONFIG = {
         {
           "keyword": "new_year_eve",
           date: "2023-01-21"
+        },
+         // 距离你的生日还有多少天
+        {
+          "keyword": "your_birthday",
+          date: "2023-03-29"
         },
       ],
       
@@ -207,7 +222,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "ocxn55x9GauzdiuUze-cCjXOr9fY",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "V6mEm5bpanvq8OQykzRHW4RDA5npruylw-9M3OeB07I",
+      useTemplateId: "PaTg7fH8PRiZil-XnaYii-ULIlGpqvbnYlhN2GkHjXc",
       // 所在省份
       province: "云南",
       // 所在城市
@@ -229,6 +244,11 @@ const USER_CONFIG = {
         {
           "keyword": "new_year_eve",
           date: "2023-01-21"
+        },
+         // 距离你的生日还有多少天
+        {
+          "keyword": "your_birthday",
+          date: "2023-10-08"
         },
       ],
      

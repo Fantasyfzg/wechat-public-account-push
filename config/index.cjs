@@ -308,54 +308,54 @@ const USER_CONFIG = {
         ]
       }]
     },
-   {
-      // 想要发送的人的名字
-      name: "朱云春",
-      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ocxn551EsELtr44n1ZjlJB0JRllY",
-      // 你想对他发送的模板消息的模板ID
-      useTemplateId: "V6mEm5bpanvq8OQykzRHW4RDA5npruylw-9M3OeB07I",
-      // 所在省份
-      province: "云南",
-      // 所在城市
-      city: "昆明",
-      // 认识该好友的时间
-      weChatFriendFirstDay: "2022-06-24",
+//    {
+//       // 想要发送的人的名字
+//       name: "朱云春",
+//       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+//       id: "ocxn551EsELtr44n1ZjlJB0JRllY",
+//       // 你想对他发送的模板消息的模板ID
+//       useTemplateId: "V6mEm5bpanvq8OQykzRHW4RDA5npruylw-9M3OeB07I",
+//       // 所在省份
+//       province: "云南",
+//       // 所在城市
+//       city: "昆明",
+//       // 认识该好友的时间
+//       weChatFriendFirstDay: "2022-06-24",
       
-      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://www.cnblogs.com/Fantasyfzg/",
+//       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+//       openUrl: "https://www.cnblogs.com/Fantasyfzg/",
      
-      // 倒数日
-      customizedDateList: [
-        // 距离元旦
-        {
-          "keyword": "new_year_day",
-          date: "2023-01-01"
-        },
-        // 距离除夕
-        {
-          "keyword": "new_year_eve",
-          date: "2023-01-21"
-        },
-        // 距离你的生日还有多少天
-        {
-          "keyword": "your_birthday",
-          date: "2023-07-14"
-        },
-      ],
+//       // 倒数日
+//       customizedDateList: [
+//         // 距离元旦
+//         {
+//           "keyword": "new_year_day",
+//           date: "2023-01-01"
+//         },
+//         // 距离除夕
+//         {
+//           "keyword": "new_year_eve",
+//           date: "2023-01-21"
+//         },
+//         // 距离你的生日还有多少天
+//         {
+//           "keyword": "your_birthday",
+//           date: "2023-07-14"
+//         },
+//       ],
      
-      // 我给对方的留言
-      mywords: [{
-        contents: [
-           "永远年轻！beautiful！！！",
-            "天天开心！！！",
-            "每天好心情！！！",
-            "期待一起干饭！",
-            "啥时候介绍一下你帅帅的男朋友",
-            "优秀的人始终优秀！"
-        ]
-      }]
-    },
+//       // 我给对方的留言
+//       mywords: [{
+//         contents: [
+//            "永远年轻！beautiful！！！",
+//             "天天开心！！！",
+//             "每天好心情！！！",
+//             "期待一起干饭！",
+//             "啥时候介绍一下你帅帅的男朋友",
+//             "优秀的人始终优秀！"
+//         ]
+//       }]
+//     },
     
     // 这是每一个user的模板
 //     {
